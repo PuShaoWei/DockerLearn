@@ -69,3 +69,33 @@ docker pull redis
 docker images
 ```
 
+5. 现有镜像
+```
+[root@izm5ej1n0xcwfs3iuh67o5z pushaowei]# docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+66ee1443c8a5        haproxy             "/docker-entrypoint.…"   10 days ago         Up 10 days          0.0.0.0:6301->6301/tcp   HAProxy
+2677f9997079        django              "/bin/bash"              10 days ago         Up 10 days                                   App2
+ea510959851b        django              "/bin/bash"              10 days ago         Up 10 days                                   App1
+3dc1206afaeb        redis               "docker-entrypoint.s…"   10 days ago         Up 10 days          6379/tcp                 redis-slave2
+1be76b1eb845        redis               "docker-entrypoint.s…"   10 days ago         Up 10 days          6379/tcp                 redis-slave1
+83f715ace850        redis               "docker-entrypoint.s…"   10 days ago         Up 10 days          6379/tcp                 redis-master
+```
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
